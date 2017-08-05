@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#80000000"
+    tools:context="com.example.andriod.yupdevmp3.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        >
+
+        <TextView
+            android:id="@+id/mainText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:text="YupDevMp3"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/yupLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/mainText1"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:src="@drawable/yup" />
+
+        <SeekBar
+            android:id="@+id/mainSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/mainText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mainSeekBar"
+            android:layout_marginLeft="20dp"
+            android:text="qwert"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mainText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mainSeekBar"
+            android:layout_centerHorizontal="true"
+            android:text="qwert"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/mainText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mainSeekBar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="qwert"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/forward"
+            android:paddingBottom="20dp" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:text="@string/pause"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+        android:text="STOP"
+            android:paddingBottom="20dp"
+            android:id="@+id/button5"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:text="@string/play"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:text="@string/rewind"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="20dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
